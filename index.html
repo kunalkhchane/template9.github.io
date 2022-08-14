@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <title>Template 9 responsive</title>
+    <link rel="stylesheet" href="template9.css">
+    <link rel="stylesheet" media="Screen and (max-width:1260px)" href="temp9_phone.css">
+</head>
+<body>
+    <div id="nav-bar">
+
+        <input type="checkbox" id="check">
+        <label for="check">
+          <ion-icon name="menu-sharp" id="btn"></ion-icon>
+          <ion-icon name="close-sharp" id="cancel"></ion-icon>
+        </label>
+
+        <img src="reddot_logo.jpg" alt="logo">
+        <ul>
+            <li><a href="#">Demos</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="#">Journal</a></li>
+            <li><a href="#">Contact us</a></li>
+           <!-- <li><a href="#"><ion-icon name="person-outline"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="heart-outline"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="lock-closed-outline"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="search-outline"></ion-icon></a></li> -->
+        </ul>
+
+        <div id="icons">
+          <button type="button" class="icon-button">
+            <span><ion-icon name="person-outline"></ion-icon></span>
+          </button>
+
+          <button type="button" class="icon-button">
+            <span class="material-icons"><ion-icon name="heart-outline"></ion-icon></span>
+            <span class="icon-button__badge">0</span>
+          </button>
+
+          <button type="button" class="icon-button">
+            <span class="material-icons"><ion-icon name="lock-closed-outline"></ion-icon></span>
+            <span class="icon-button__badge">0</span>
+          </button>
+
+        <!--  <button type="button" class="icon-button">
+            <span><ion-icon name="search-outline"></ion-icon></span>
+          </button>-->
+        </div>
+
+        <div class="search-box">
+          <!--<input type="text" class="searchText" placeholder="type here...">-->
+          <a href="#" class="searchBtn">
+            <ion-icon name="search-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+
+      <!--form and heading section-->
+      <section id="formSection">
+        <h1>Send us a message</h1>
+
+        <div id="formDiv">
+          <form action="">
+            <div class="inputBox">
+              <label for="Name">Your name*</label>
+              <input type="text" id="Name" class="fullinput">
+            </div>
+            <div class="inputBox">
+              <label for="Email">Your email address*</label>
+              <input type="email" id="Email" class="fullinput">
+            </div>
+            <div class="inputBox">
+              <label for="Number">Your phone number</label>
+              <input type="number" id="Number" class="fullinput">
+            </div>
+
+            <div class="inputBox">
+              <label for="inquiry">Type of inquiry</label>
+              <input type="text" id="inquiry" list="listID" class="fullinput">
+              <button type="reset">x</button>
+              <datalist id="listID">
+                <option value='Inquiry1'></option>
+                <option value='Inquiry2'></option>
+                <option value='Inquiry3'></option>
+              </datalist>
+            </div>
+
+            <div class="inputBox">
+              <label for="msg">Your message</label>
+              <textarea id="msg" class="fullinput" rows="6"></textarea>
+            </div>
+
+            <div id="Button">
+            <button type="submit" id="sendBtn">Send message</button>
+            </div>
+
+          </form>
+        </div>
+      </section>
+
+      <!--address and mail part on 2nd page-->
+      <section id="Fashion">
+        <div class="fashionDiv" id="fashion1Bg">
+          <h1>Matches Fashion</h1>
+          <p>demo@demostore.com <br> +44 20 7487 5400</p>
+          <p>87 Marykebone High St, Marylebone London WIU 4QU, England</p>
+          <button>View On Map</button>
+        </div>
+        <div class="fashionDiv" id="fashion2Bg">
+          <h1>Mercantile London</h1>
+          <p>demo@demostore.com <br> +44 20 7487 5400</p>
+          <p>87 Marykebone High St, Marylebone London WIU 4QU, England</p>
+          <button>View On Map</button>
+        </div>
+        <div class="fashionDiv" id="fashion3Bg">
+          <h1>Iris Fashion</h1>
+          <p>demo@demostore.com <br> +44 20 7487 5400</p>
+          <p>87 Marykebone High St, Marylebone London WIU 4QU, England</p>
+          <button>View On Map</button>
+        </div>
+        <div class="fashionDiv" id="fashion4Bg">
+          <h1>Goodhood</h1>
+          <p>demo@demostore.com <br> +44 20 7487 5400</p>
+          <p>87 Marykebone High St, Marylebone London WIU 4QU, England</p>
+          <button>View On Map</button>
+        </div>
+      </section>
+
+      <!--last section-->
+      <section id="endSection">
+        <div class="SectContent">
+          <img src="reddot_logo.jpg" alt="">
+          <p>High-quality Woocommerce WordPress theme built with WPBakery Page Buidler and guaranteed on themeForest.</p>
+          <form action="">
+            <label for="mail">Enter your Email address..
+              <button type="submit"><ion-icon name="arrow-forward-outline"></ion-icon></button>
+            </label>
+            <input type="email" id="mail">
+          </form>
+        </div>
+
+        <nav id="endNav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Journal</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </section>
+</body>
+</html>

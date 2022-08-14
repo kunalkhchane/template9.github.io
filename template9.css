@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  /*Nav bar section*/
+  #nav-bar{
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    display: flex;
+  }
+  
+  #nav-bar img{
+    padding: 20px 40px;
+    height: 90px;
+    width: 190px;
+    box-sizing: border-box;
+  }
+  
+  #nav-bar ul{
+   box-sizing: border-box;
+   margin-left: auto;
+   font-family: 'Montserrat', sans-serif;
+  }
+  
+  #nav-bar ul li{
+    list-style-type: none;
+    padding:30px 20px;
+    display: inline-block;
+  }
+  
+  #nav-bar ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    float: right;
+    box-sizing: border-box;
+    color: black;
+    display: block;
+    justify-content: right;
+  }
+  
+  #nav-bar ul li a:hover{
+    color: red;
+    transition: all ease 0.5s;
+  }
+  
+  #icons{
+    display: flex;
+    margin-top: 27px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  #icons .icon-button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    padding-right: 30px;
+    padding-left: 31px;
+  }
+  
+  #icons .icon-button .icon-button__badge{
+    position: absolute;
+    top: -7px;
+    right: 8px;
+    width: 15px;
+    height: 15px;
+    background: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  
+  #icons .icon-button ion-icon{
+    font-size: 20px;
+  }
+  
+  #icons .icon-button:hover{
+    cursor: pointer;
+    background-color: rgba(240, 235, 235, 0.961);
+    border-radius: 50%;
+  }
+  
+  a,a:hover{
+    text-decoration: none;
+  }
+  
+  .search-box{
+    position: relative;
+    margin-top: 33px;
+    margin-right: 80px;
+  }
+ /* 
+  .searchText{
+    width: 0px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    transition: all 0.2s linear;
+  }*/
+  
+  .searchBtn{
+    font-size: 20px;
+    position: absolute;
+  }
+  
+  /*.search-box:hover > .searchText{
+    width: 15rem;
+    padding: 5px;
+    font-size: 14px;
+    background-color: rgb(223, 224, 225);
+    color: royalblue;
+  }*/
+  
+  .search-box:hover > .searchBtn{
+    color: red;
+    transition: .5s all ease;
+  }
+
+label #btn,
+label #cancel{
+    color: black;
+    font-size: 30px;
+    float: left;
+    line-height: 80px;
+    margin-left: 20px;
+    cursor: pointer;
+    margin-top: 25px;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+/* form section */
+#formSection{
+  background-color: rgb(255, 5, 92);
+  width: 100%;
+  font-family: 'Albert Sans', sans-serif;
+}
+
+#formSection h1{
+  font-size: 40px;
+  display: block;
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 40px;
+  color: white;
+}
+
+#formDiv{
+  width: 40%;
+  /*margin-left: 510px;*/
+  position: relative;
+  display: grid;
+  margin: auto;
+}
+
+#formDiv .inputBox{
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+#formDiv .inputBox .fullinput{
+  width: 95%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 2px solid rgba(197, 195, 195, 0.906);
+  color: lightgreen;
+  font-size: 16px;
+  padding-bottom: 3px;
+}
+
+#formDiv .inputBox label{
+  font-size: 18px;
+  top: 0;
+  left: 0;
+  color: rgba(255, 255, 255, 0.906);
+}
+#formDiv .inputBox button{
+  position: relative;
+  outline: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  left: -33px;
+}
+input::-webkit-calendar-picker-indicator {
+  opacity: 100;
+  color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+textarea::-webkit-scrollbar{
+  width: 4px;
+}
+textarea::-webkit-scrollbar-thumb{
+  background-color: rgba(255, 255, 255, 0.664);
+}
+
+#Button{
+  text-align: center; 
+}
+
+#sendBtn{
+  margin-top: 30px;
+  padding: 40px 80px 20px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+#sendBtn:hover{
+  background-color: rgba(220, 217, 217, 0.943);
+  letter-spacing: 2px;
+}
+
+
+/*2nd part fashion section*/
+#Fashion{
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+}
+
+#Fashion .fashionDiv{
+  width: 25%;
+  /*background-color: aqua;*/
+  /*background-image: url("fashion_bg1.jpg");*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+}
+
+#Fashion .fashionDiv h1{
+  text-align: center;
+  font-size: 50px;
+  padding: 45px 45px 10px;
+}
+#Fashion .fashionDiv p{
+  text-align: center;
+  font-size: 18px;
+  padding: 0px 30px 15px;
+}
+#Fashion .fashionDiv button{
+  background: transparent;
+  outline: none;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#fashion1Bg{
+  background-image: url("fashion_bg1Copy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#fashion2Bg{
+  background-image: url("fashion_bg2Copy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#fashion3Bg{
+  background-image: url("fashion_bg3Copy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#fashion4Bg{
+  background-image: url("fashion_bg2Copy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/*End section of page*/
+#endSection{
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+}
+
+.SectContent{
+  width: 40%;
+  display: grid;
+  margin: auto;
+  padding: 0px;
+}
+
+#endSection .SectContent img{
+  margin-top: 55px;
+  margin-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#endSection .SectContent p{
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#endSection .SectContent form{
+  padding-left: 10px;
+}
+
+#endSection .SectContent input{
+  width: 99%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(159, 159, 159);
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+#endSection .SectContent label{
+  width: 95%;
+  display: inline;
+  justify-content: space-around;
+  font-size: 18px;
+  color: gray;
+  /*display: block;
+  margin-left: auto;
+  margin-right: auto;*/
+  top: 0;
+  left: 0;
+}
+
+#endSection .SectContent button{
+ /* border: none;
+  background: none;
+  outline: none;
+  font-size: 20px;
+  color: gray;
+  top: 0;
+  right: 0;*/
+  position: relative;
+  outline: none;
+  background: none;
+  border: none;
+  color: gray;
+  font-size: 30px;
+  float: right;
+  top: 0px;
+  cursor: pointer;
+  /*margin-right: 12px;*/
+}
+
+#endNav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 10rem;
+}
+
+#endNav ul{
+  display: flex;
+  box-sizing: border-box;
+}
+
+#endNav ul li{
+  list-style-type: none;
+  padding: 5px 20px;
+}
+
+#endNav ul li a{
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+
+#endNav ul li a:hover{
+  background-color: lightgray;
+  padding: 5px;
+  border-radius: 5px;
+}

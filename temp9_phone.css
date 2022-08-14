@@ -1,0 +1,142 @@
+#nav-bar{
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+}
+
+#nav-bar img{
+    width: 126px;
+    height: 78px;
+    padding: 20px 11px;
+}
+
+label #btn{
+    display: block;
+}
+
+#nav-bar ul{
+    position: absolute;
+    width: 70%;
+    height: 100vh;
+    background: #c7c7c7;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 9;
+    box-shadow: 10px 0px 20px 0 rgb(37, 37, 37);
+}
+
+#nav-bar ul li{
+    display: block;
+    display: grid;
+    place-items: center;
+    margin: 35px;
+    padding: 20px 9px;
+}
+
+#check:checked ~ ul{
+    left: 0;
+}
+#check:checked ~ label #btn{
+    display: none;
+}
+#check:checked ~ label #cancel{
+    display: block;
+}
+/*
+#icons{
+    margin-top: 10px;
+    position: absolute;
+    right: 2px;
+    font-size: 14px;
+    top: 0px;
+}*/
+#icons{
+    display: none;
+    position: absolute;
+    top: 70px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    transition: all .5s;
+    z-index: 9;
+}
+#check:checked ~ #icons{
+    display: flex;
+}
+
+#icons .icon-button{
+    padding: 0 28px;
+    font-size: 12px;
+}
+#icons .icon-button ion-icon{
+    font-size: 18px;
+}
+
+.search-box{
+    position: absolute;
+    right: -40px;
+}
+
+.search-box:hover > .searchText{
+    width: 8rem;
+    padding: 5px;
+    font-size: 14px;
+    background-color: rgb(223, 224, 225);
+    color: royalblue;
+  }
+
+
+/*form section and heading section*/
+#formSection{
+    width: 100%;
+}
+#formSection h1{
+    font-size: 35px;
+    padding-top: 55px;
+    padding-bottom: 50px;
+}
+
+#formSection #formDiv{
+    width: 90%;
+}
+#formDiv .inputBox label{
+    font-size: 14px;
+}
+#formDiv .inputBox .fullinput{
+    font-size: 14px;
+}
+
+#sendBtn{
+    padding: 21px 39px 20px;
+}
+
+
+/*2nd part address and mail section*/
+#Fashion{
+    flex-direction: column;
+}
+#Fashion .fashionDiv{
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#Fashion .fashionDiv h1{
+    font-size: 35px;
+    padding: 25px 25px 10px;
+}
+#Fashion .fashionDiv p{
+    font-size: 14px;
+    padding: 0px 20px 10px;
+}
+#Fashion .fashionDiv button{
+    padding: 10px 20px;
+}
+
+/*End section*/
+.SectContent{
+    width: 80%;
+}
+#endNav ul{
+    flex-direction: column;
+}
